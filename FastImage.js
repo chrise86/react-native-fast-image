@@ -89,7 +89,7 @@ const FastImageSourcePropType = PropTypes.shape({
 
 FastImage.propTypes = {
   ...ViewPropTypes,
-  source: FastImageSourcePropType,
+  source: PropTypes.oneOfType([FastImageSourcePropType, PropTypes.number]),
   onLoadStart: PropTypes.func,
   onProgress: PropTypes.func,
   onLoad: PropTypes.func,
